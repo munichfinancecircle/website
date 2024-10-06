@@ -334,13 +334,13 @@
 </script>
 <script>
     // Set the date we're counting down to
-    const countDownDate = new Date("Oct 1, 2024 15:00:00").getTime();
+    var countDownDate = new Date("Oct 9, 2024 15:00:00").getTime();
 
     // Update the countdown every 1 second
     const x = setInterval(function() {
 
         // Get today's date and time
-        const now = new Date().getTime();
+        var now = new Date().getTime();
 
         // Find the distance between now and the countdown date
         const distance = countDownDate - now;
@@ -359,8 +359,11 @@
 
         // If the countdown is finished, write some text
         if (distance < 0) {
-            clearInterval(x);
-            document.querySelector(".countdown").innerHTML = "EXPIRED";
+            countDownDate = new Date("Oct 28, 2024 17:00:00").getTime();
+            const distanceCheck = countDownDate - now;
+            if (distanceCheck < 0) {
+                document.querySelector(".countdown").innerHTML = "CLOSED";
+            }
         }
     }, 1000);
 </script>
