@@ -472,7 +472,7 @@ h3{
 }
 .hero-btn:hover{
     border: 1px solid #3069FF;
-    background: #000000;
+    background: #ffffff4d;
     transition: 1s; 
 }
 
@@ -584,7 +584,7 @@ h3{
 
 
 .countdown {
-    color: #333;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
