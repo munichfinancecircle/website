@@ -360,6 +360,8 @@
         // If the countdown is finished, write some text
         if (distance < 0) {
             clearInterval(x);
+            document.querySelector(".applying h2").innerHTML = "Application phase ends in:";
+            document.querySelector(".applying h3").innerHTML = "Application phase ends in:";
             const y = setInterval(function() {
 
             // Get today's date and time
@@ -383,6 +385,8 @@
             // If the countdown is finished, write some text
             if (distance < 0) {
                 clearInterval(y);
+                document.querySelector(".applying h2").innerHTML = "Next application phase starts in:";
+                document.querySelector(".applying h3").innerHTML = "Next application phase starts in:";
                 document.querySelector(".countdown").innerHTML = "April";
             }
                 
