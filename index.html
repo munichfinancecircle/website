@@ -335,7 +335,7 @@
 <script>
     // Set the date we're counting down to
     const countDownDate = new Date("Oct 9, 2024 11:00:00").getTime();
-    const countDownDateTwo = new Date("Oct 28, 2024 19:00:00").getTime();
+    
     // Update the countdown every 1 second
     const x = setInterval(function() {
 
@@ -363,22 +363,22 @@
             document.querySelector(".applying h2").innerHTML = "Application phase ends in:";
             document.querySelector(".applying h3").innerHTML = "Application phase ends in:";
             const y = setInterval(function() {
-
+            const countDownDateTwo = new Date("Oct 28, 2024 19:00:00").getTime();
             // Get today's date and time
-            const now = new Date().getTime();
+            const nowTwo = new Date().getTime();
 
             // Find the distance between now and the countdown date
-            const distance = countDownDatetwo - now;
+            const distanceTwo = countDownDatetwo - nowTwo;
 
             // Time calculations for days, hours, minutes, and seconds
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const daysTwo = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hoursTwo = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             //const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             //const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the respective elements
-            document.getElementById("days").innerHTML = days + "<span>Days</span>";
-            document.getElementById("hours").innerHTML = hours + "<span>Hours</span>";
+            document.getElementById("days").innerHTML = daysTwo + "<span>Days</span>";
+            document.getElementById("hours").innerHTML = hoursTwo + "<span>Hours</span>";
             //document.getElementById("minutes").innerHTML = minutes + "<span>Minutes</span>";
             //document.getElementById("seconds").innerHTML = seconds + "<span>Seconds</span>";
 
