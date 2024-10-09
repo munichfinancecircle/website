@@ -334,57 +334,41 @@
 </script>
 <script>
     // Set the date we're counting down to
-    const countDownDate = new Date("Oct 9, 2024 11:00:00").getTime();
-    
-    // Update the countdown every 1 second
-    const x = setInterval(function() {
+    // First countdown date
+const countDownDate = new Date("Oct 9, 2024 11:00:00").getTime();
 
-        // Get today's date and time
-        const now = new Date().getTime();
+// Second countdown date (define your second date here)
+const secondCountDownDate = new Date("Nov 1, 2024 12:00:00").getTime();
 
-        // Find the distance between now and the countdown date
-        const distance = countDownDate - now;
+// Update the countdown every 1 second
+const x = setInterval(function() {
 
-        // Time calculations for days, hours, minutes, and seconds
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        //const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        //const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Get today's date and time
+    const now = new Date().getTime();
 
-        // Display the result in the respective elements
-        document.getElementById("days").innerHTML = days + "<span>Days</span>";
-        document.getElementById("hours").innerHTML = hours + "<span>Hours</span>";
-        //document.getElementById("minutes").innerHTML = minutes + "<span>Minutes</span>";
-        //document.getElementById("seconds").innerHTML = seconds + "<span>Seconds</span>";
+    // Determine which countdown date to use
+    let distance;
+    if (countDownDate > now) {
+        // First countdown is still active
+        distance = countDownDate - now;
+    } else {
+        // First countdown finished, switch to second countdown
+        distance = secondCountDownDate - now;
+        document.querySelector(".applying h2").innerHTML = "Application phase ends in:";
+        document.querySelector(".applying h3").innerHTML = "Application phase ends in:";
+    }
+
+    // Time calculations for days, hours, minutes, and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    // Display the result in the respective elements
+    document.getElementById("days").innerHTML = days + "<span> Days</span>";
+    document.getElementById("hours").innerHTML = hours + "<span> Hours</span>";
 
         // If the countdown is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.querySelector(".applying h2").innerHTML = "Application phase ends in:";
-            document.querySelector(".applying h3").innerHTML = "Application phase ends in:";
-            const y = setInterval(function() {
-            const countDownDateTwo = new Date("Oct 28, 2024 19:00:00").getTime();
-            // Get today's date and time
-            const nowTwo = new Date().getTime();
-
-            // Find the distance between now and the countdown date
-            const distanceTwo = countDownDatetwo - nowTwo;
-
-            // Time calculations for days, hours, minutes, and seconds
-            const daysTwo = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hoursTwo = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            //const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            //const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result in the respective elements
-            document.getElementById("days").innerHTML = daysTwo + "<span>Days</span>";
-            document.getElementById("hours").innerHTML = hoursTwo + "<span>Hours</span>";
-            //document.getElementById("minutes").innerHTML = minutes + "<span>Minutes</span>";
-            //document.getElementById("seconds").innerHTML = seconds + "<span>Seconds</span>";
-
-            // If the countdown is finished, write some text
-            if (distance < 0) {
-                clearInterval(y);
                 document.querySelector(".applying h2").innerHTML = "Next application phase starts in:";
                 document.querySelector(".applying h3").innerHTML = "Next application phase starts in:";
                 document.querySelector(".countdown").innerHTML = "April";
