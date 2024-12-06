@@ -396,6 +396,37 @@ h3{
 }
 
 /* Upcoming Events Section */
+.events{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+.events h1{
+    font-size: 56px;
+}
+
+.responsive-iframe-container {
+    display: flex;
+    justify-content: center; /* Ensures content is horizontally centered */
+    align-items: flex-start; /* Ensures content aligns to the top */
+    width: 100%; /* Occupies the full width of the viewport */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 10px; /* Optional: Add some padding on small screens */
+    box-sizing: border-box; /* Includes padding in width calculations */
+}
+
+.responsive-iframe-container iframe {
+    width: 80%; /* Dynamically scales based on the screen width */
+    max-width: 800px; /* Ensures it doesn’t get too large */
+    height: 936px; /* Adjust height as needed */
+    border: none;
+}
+
+
+
 /*#upcoming-events {
     text-align: center;
     padding: 50px 0;
