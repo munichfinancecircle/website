@@ -62,8 +62,8 @@ const team = [
   {
     name: "Louise Lorenz",
     role: "Head of Communications",
-    image: "/images/Team/TeamMaximilianWarthmann.jpg",
-    linkedin: "#",
+    image: "",
+    linkedin: "https://www.linkedin.com/in/louise-lorenz-93ba452b1/",
   },
 ]
 
