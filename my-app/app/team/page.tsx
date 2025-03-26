@@ -1,10 +1,10 @@
 "use client"
 
-import { useState } from "react"
+//import { useState } from "react"
 import Image from "next/image"
 import { Linkedin, Mail } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsContent} from "@/components/ui/tabs" //, TabsList, TabsTrigger, Tabs
 
 // Sample team data
 const teamData = {
@@ -14,36 +14,36 @@ const teamData = {
       name: "Constantin Albrecht",
       role: "President & Founder",
       image: "/images/Team/TeamConstantinAlbrecht.jpg",
-      bio: "Constantin founded Munich FinanceCircle in 2020 with the vision to connect ambitious students with industry professionals. He has previous experience in investment banking and private equity.",
-      linkedin: "#",
-      email: "constantin@munichfinancecircle.de",
+      bio: "Constantin oversees the club which he founded in 2023 with the vision to connect ambitious students with industry professionals. He gained previous experience at Deutsche Bank, Citadel and in bond trading.",
+      linkedin: "https://www.linkedin.com/in/constantin-albrecht/",
+      email: "constantin.albrecht@munichfinancecircle.de",
     },
     {
       id: 2,
       name: "Antonia Zimmermann",
-      role: "Advisory Vice President Education",
+      role: "Head of Education",
       image: "/images/Team/TeamAntoniaZimmermann.jpg",
-      bio: "Antonia oversees all educational initiatives and workshops. She has a background in financial consulting and is passionate about making financial knowledge accessible to students.",
-      linkedin: "#",
-      email: "antonia@munichfinancecircle.de",
+      bio: "Antonia oversees all educational initiatives and workshops. Leveraging her background in accounting and audit, she is deeply committed to ensuring that financial knowledge is accessible and understandable for students.",
+      linkedin: "https://www.linkedin.com/in/antonia-zimmermann-1863b2215/",
+      email: "antonia.zimmermann@munichfinancecircle.de",
     },
     {
       id: 3,
       name: "Maximilian Warthmann",
-      role: "Advisory Vice President Infrastructure",
+      role: "Head of Infrastructure",
       image: "/images/Team/TeamMaximilianWarthmann.jpg",
-      bio: "Maximilian is responsible for the operational infrastructure of the organization. He has experience in project management and business development.",
-      linkedin: "#",
-      email: "maximilian@munichfinancecircle.de",
+      bio: "Maximilian is responsible for the operational infrastructure of the organization. He has experience in project management and business development and has previously been working for BMW in software Development.",
+      linkedin: "https://www.linkedin.com/in/maximilianwarthmann/",
+      email: "maximilian.warthmann@munichfinancecircle.de",
     },
     {
       id: 4,
-      name: "Julia Müller",
-      role: "Vice President Events",
+      name: "Louise Lorenz",
+      role: "Head of Communications",
       image: "/images/Team/TeamAntoniaZimmermann.jpg",
-      bio: "Julia coordinates all events and networking opportunities. She has a background in event management and is dedicated to creating valuable connections for our members.",
+      bio: "Louise coordinates all events and networking opportunities. She has a background in event management and is dedicated to creating valuable connections for our members.",
       linkedin: "#",
-      email: "julia@munichfinancecircle.de",
+      email: "louise.lorenz@munichfinancecircle.de",
     },
   ],
   heilbronn: [
@@ -78,7 +78,7 @@ const teamData = {
 }
 
 export default function TeamPage() {
-  const [activeLocation, setActiveLocation] = useState("munich")
+  //const [activeLocation, setActiveLocation] = useState("munich")
 
   return (
     <div className="container mx-auto px-4 py-24 sm:px-6 lg:px-8">
@@ -88,11 +88,11 @@ export default function TeamPage() {
           <p className="text-lg text-muted-foreground">Meet the dedicated individuals behind Munich FinanceCircle</p>
         </div>
 
-        <Tabs defaultValue="munich" onValueChange={setActiveLocation}>
-          <TabsList className="grid w-full grid-cols-2 mb-8">
+        <Tabs defaultValue="munich"> 
+          {/* <TabsList className="grid w-full grid-cols-2 mb-8">
             <TabsTrigger value="munich">Munich Team</TabsTrigger>
             <TabsTrigger value="heilbronn">Heilbronn Team</TabsTrigger>
-          </TabsList>
+          </TabsList> */}
 
           <TabsContent value="munich" className="space-y-8">
             {teamData.munich.map((member) => (
@@ -100,7 +100,7 @@ export default function TeamPage() {
                 <CardContent className="p-0">
                   <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-1/3 h-64 md:h-auto relative"> 
-                      <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" priority/>
+                      <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover object-[center_30%]" priority/>
                     </div>
                     <div className="w-full md:w-2/3 p-6">
                       <h2 className="text-2xl font-bold mb-1">{member.name}</h2>
@@ -127,13 +127,13 @@ export default function TeamPage() {
             ))}
           </TabsContent>
 
-          <TabsContent value="heilbronn" className="space-y-8">
+          {/* <TabsContent value="heilbronn" className="space-y-8">
             {teamData.heilbronn.map((member) => (
               <Card key={member.id} className="overflow-hidden">
                 <CardContent className="p-0">
                   <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-1/3 h-64 md:h-auto relative">
-                      <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+                      <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover object-[center_30%]" priority/>
                     </div>
                     <div className="w-full md:w-2/3 p-6">
                       <h2 className="text-2xl font-bold mb-1">{member.name}</h2>
@@ -158,7 +158,7 @@ export default function TeamPage() {
                 </CardContent>
               </Card>
             ))}
-          </TabsContent>
+          </TabsContent> */}
         </Tabs>
       </div>
     </div>

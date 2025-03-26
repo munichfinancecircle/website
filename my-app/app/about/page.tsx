@@ -19,7 +19,7 @@ const topics = [
     icon: Rocket,
     description: "We bridge the gap between innovative startups and financial resources. Our focus areas include:",
     points: [
-      "Venture Capital and Private Equity insights",
+      "Venture Capital insights",
       "Startup valuation methodologies",
       "Pitch deck preparation workshops",
       "Networking with successful entrepreneurs",
@@ -33,7 +33,7 @@ const topics = [
       "Blockchain and cryptocurrency developments",
       "Fintech innovation trends",
       "Digital banking solutions",
-      "AI and machine learning in finance",
+      "AI and machine learning in Finance",
     ],
   },
 ]
@@ -51,7 +51,7 @@ export default function AboutPage() {
         </div>
 
         <div className="space-y-12">
-          {topics.map((topic, index) => (
+          {topics.map((topic) => (
             <Card key={topic.title} className="overflow-hidden">
               <div className="md:grid md:grid-cols-5 md:divide-x">
                 <CardHeader className="md:col-span-2 flex flex-col items-center justify-center text-center p-8 bg-secondary/30">
@@ -78,10 +78,10 @@ export default function AboutPage() {
         <div className="mt-16 text-center">
           <Card className="bg-primary text-primary-foreground">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-4">Join Us in Shaping the Future of Finance</h2>
+              <h2 className="text-2xl font-bold mb-4">Join Us to Go Beyond in the World of Finance</h2>
               <p className="text-lg mb-6 text-primary-foreground/90">
-                Whether you're passionate about traditional finance, entrepreneurship, or financial technology, Munich
-                FinanceCircle offers you the platform to grow and connect with industry leaders.
+                Whether you are passionate about traditional finance, entrepreneurship, or financial technology, Munich
+                FinanceCircle offers you the platform to grow and connect with industry leaders and innovators.
               </p>
               <div className="inline-flex gap-4">
                 <a

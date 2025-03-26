@@ -13,12 +13,12 @@ const locations = [
 ];
 
 export default function GermanyMap() {
-  const center: LatLngExpression = [51.1657, 10.4515]; // Ensure it's a valid type
+  const center: LatLngExpression = [49.1657, 10.4515]; // Ensure it's a valid type
 
   return (
     <MapContainer
       center={center as LatLngExpression} // Explicit type assertion
-      zoom={6}
+      zoom={7}
       style={{ width: "100%", height: "400px", borderRadius: "10px" }}
       scrollWheelZoom={false} // Disable zoom on scroll for better UX
     >

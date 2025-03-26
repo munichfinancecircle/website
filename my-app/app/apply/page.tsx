@@ -5,7 +5,6 @@ import { Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
-import { Linden_Hill } from "next/font/google"
 import Link from "next/link"
 
 // Sample application data
@@ -29,7 +28,7 @@ export default function ApplyPage() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      //applicationData.isActive = applicationData.nextDeadline < applicationData.nextApplicationPhase
+      applicationData.isActive = applicationData.nextDeadline < applicationData.nextApplicationPhase
       const targetDate = applicationData.isActive ? applicationData.nextDeadline : applicationData.nextApplicationPhase
 
       const difference = targetDate.getTime() - new Date().getTime()

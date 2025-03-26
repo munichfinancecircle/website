@@ -2,11 +2,10 @@
 
 import { useState, useEffect } from "react"
 import { CalendarIcon, ChevronLeft, ChevronRight } from "lucide-react"
-import { format, addMonths, subMonths } from "date-fns"
+import { format, addMonths, subMonths, startOfDay } from "date-fns"
 import { Button } from "@/components/ui/button"
-import { Calendar } from "@/components/ui/calendar"
+import { Calendar as ShadCNCalendar} from "@/components/ui/calendar"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 // Sample events data - in a real app, this would come from Google Calendar API
 const events = [
@@ -48,7 +47,9 @@ export default function CalendarPage() {
   const [date, setDate] = useState<Date>(new Date())
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date())
   const [filteredEvents, setFilteredEvents] = useState(events)
-  const [view, setView] = useState<"month" | "list">("month")
+  // const [view, setView] = useState<"month" | "list">("month")
+
+  const eventDates = new Set(events.map(event => format(startOfDay(event.date), "yyyy-MM-dd")))
 
   useEffect(() => {
     if (selectedDate) {
@@ -94,22 +95,35 @@ export default function CalendarPage() {
                 <CardDescription>Select a date to view events</CardDescription>
               </CardHeader>
               <CardContent>
-                <Calendar
+                <ShadCNCalendar
                   mode="single"
                   selected={selectedDate}
                   onSelect={setSelectedDate}
                   month={date}
                   className="rounded-md border"
+                  modifiers={{
+                    eventDay: (day) => eventDates.has(format(day, "yyyy-MM-dd"))
+                  }}
+                  modifiersClassNames={{
+                    eventDay: "relative before:absolute before:top-1 before:left-1/2 before:w-1.5 before:h-1.5 before:bg-red-500 before:rounded-full before:-translate-x-1/2"
+                  }}
+                  disableNavigation={true}
                 />
                 <div className="mt-4 text-sm text-muted-foreground">
                   <p>
                     This calendar is synchronized with our Google Calendar. You can subscribe to our events by clicking
                     the button below.
                   </p>
+                  <a
+                    href="https://calendar.google.com/calendar/u/1?cid=ODk2MDkyMDAwYjNjZDVlODhhZWJmNTg5NDk5M2M5NjliNjBiYzlmNmEyMDIzMWNiOTE4MGQ0YjgwYmJjMGVlNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                   <Button className="mt-4 w-full" variant="outline">
                     <CalendarIcon className="mr-2 h-4 w-4" />
                     Subscribe to Calendar
                   </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -122,7 +136,10 @@ export default function CalendarPage() {
                   <CardTitle>
                     {selectedDate ? `Events on ${format(selectedDate, "MMMM d, yyyy")}` : "Upcoming Events"}
                   </CardTitle>
-                  <Select value={view} onValueChange={(value) => setView(value as "month" | "list")}>
+                  {/* <Select value={view} onValueChange={(value) => {
+                    setView(value as "month" | "list");
+                    handleViewChange(value)
+                    }}>
                     <SelectTrigger className="w-[120px]">
                       <SelectValue placeholder="View" />
                     </SelectTrigger>
@@ -130,7 +147,10 @@ export default function CalendarPage() {
                       <SelectItem value="month">Month</SelectItem>
                       <SelectItem value="list">List</SelectItem>
                     </SelectContent>
-                  </Select>
+                  </Select> */}
+                  <Button className="w-[120px]" onClick={() => setSelectedDate(undefined)}>
+                      Show all
+                  </Button>
                 </div>
                 <CardDescription>
                   {filteredEvents.length === 0
@@ -185,7 +205,9 @@ export default function CalendarPage() {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">Want to propose an event or collaborate with us?</p>
-          <Button>Contact Us</Button>
+          <a href="mailto:info@munichfinancecircle.de">
+            <Button>Contact Us</Button>
+          </a>
         </div>
       </div>
     </div>

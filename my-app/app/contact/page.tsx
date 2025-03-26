@@ -43,7 +43,7 @@ export default function ContactPage() {
         setSuccess(true);
         setFormData({ name: "", email: "", subject: "", message: "" });
       } catch (err) {
-        setError("Failed to send message. Please try again.");
+        setError("Failed to send message. Please try again." + err);
       } finally {
         setLoading(false);
       }
@@ -135,7 +135,7 @@ export default function ContactPage() {
         <Card>
           <CardHeader>
             <CardTitle>Send Us a Message</CardTitle>
-            <CardDescription>Fill out the form below and we'll get back to you as soon as possible</CardDescription>
+            <CardDescription>Fill out the form below and we will get back to you as soon as possible</CardDescription>
           </CardHeader>
           <CardContent>
             <form className="space-y-6" onSubmit={handleSubmit}>

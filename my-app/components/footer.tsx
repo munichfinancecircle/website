@@ -7,8 +7,8 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <Logo />
-            <p className="mt-4 text-sm text-muted-foreground">An official club of the Technical University of Munich</p>
+            <Logo className="h-8 w-auto overflow-hidden -translate-x-7"/>
+            <p className="mt-4 text-sm text-muted-foreground">Student Finance Club of the Technical University of Munich</p>
           </div>
 
           <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -31,7 +31,7 @@ export function Footer() {
 
               <div className="mt-4">
                 <h4 className="text-sm font-semibold mb-2">Responsible for Content:</h4>
-                <p className="text-sm text-muted-foreground">Advisory Board of Vice Presidents</p>
+                <p className="text-sm text-muted-foreground">Munich FinanceCircle</p>
               </div>
             </div>
 
@@ -44,11 +44,8 @@ export function Footer() {
               </p>
 
               <nav className="space-y-2">
-                <Link href="/privacy" className="block text-sm text-muted-foreground hover:text-primary">
+                <Link href="/privacy_policy.pdf" className="block text-sm text-muted-foreground hover:text-primary">
                   Privacy Policy
-                </Link>
-                <Link href="/imprint" className="block text-sm text-muted-foreground hover:text-primary">
-                  Imprint
                 </Link>
               </nav>
             </div>

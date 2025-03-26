@@ -2,42 +2,42 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Building2, Rocket, CircuitBoard, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { partners } from "./partners/page"
+//import { partners } from "./partners/page"
 
 
 // Sample partner data
-// const partners = [
-//   {
-//     name: "Jane Street",
-//     logo: "/placeholder.svg?height=100&width=200",
-//     description: "Leading global trading firm and liquidity provider.",
-//   },
-//   {
-//     name: "TIBURON",
-//     logo: "/placeholder.svg?height=100&width=200",
-//     description: "Investment and advisory firm focused on growth companies.",
-//   },
-//   {
-//     name: "Bloomberg",
-//     logo: "/placeholder.svg?height=100&width=200",
-//     description: "Global financial data and media company.",
-//   },
-//   {
-//     name: "S&P Global",
-//     logo: "/placeholder.svg?height=100&width=200",
-//     description: "World's leading provider of credit ratings and analytics.",
-//   },
-//   {
-//     name: "ValueTrust",
-//     logo: "/placeholder.svg?height=100&width=200",
-//     description: "Financial advisory and valuation services.",
-//   },
-//   {
-//     name: "ALP.X GROUP",
-//     logo: "/placeholder.svg?height=100&width=200",
-//     description: "Investment and consulting group.",
-//   },
-// ]
+const partners = [
+  {
+    name: "Jane Street",
+    logo: "/placeholder.svg?height=100&width=200",
+    description: "Leading global trading firm and liquidity provider.",
+  },
+  {
+    name: "TIBURON",
+    logo: "/placeholder.svg?height=100&width=200",
+    description: "Investment and advisory firm focused on growth companies.",
+  },
+  {
+    name: "Bloomberg",
+    logo: "/placeholder.svg?height=100&width=200",
+    description: "Global financial data and media company.",
+  },
+  {
+    name: "S&P Global",
+    logo: "/placeholder.svg?height=100&width=200",
+    description: "World's leading provider of credit ratings and analytics.",
+  },
+  {
+    name: "ValueTrust",
+    logo: "/placeholder.svg?height=100&width=200",
+    description: "Financial advisory and valuation services.",
+  },
+  {
+    name: "ALP.X GROUP",
+    logo: "/placeholder.svg?height=100&width=200",
+    description: "Investment and consulting group.",
+  },
+]
 
 // Sample team data
 const team = [
@@ -56,6 +56,12 @@ const team = [
   {
     name: "Maximilian Warthmann",
     role: "Advisory Vice President Infrastructure",
+    image: "/images/Team/TeamMaximilianWarthmann.jpg",
+    linkedin: "#",
+  },
+  {
+    name: "Louise Lorenz",
+    role: "Head of Communications",
     image: "/images/Team/TeamMaximilianWarthmann.jpg",
     linkedin: "#",
   },
@@ -122,7 +128,7 @@ export default function Home() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary">The Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member) => (
               <div key={member.name} className="flex flex-col items-center">
                 <div className="relative w-64 h-64 mb-6">
@@ -161,7 +167,7 @@ export default function Home() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary">Partners</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
             {partners.slice(0, 6).map((partner) => (
               <div
                 key={partner.name}

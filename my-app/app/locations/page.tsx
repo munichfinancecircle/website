@@ -1,12 +1,14 @@
 "use client"
 
-import { useState } from "react"
+// import { useState } from "react"
 import Image from "next/image"
 import { MapPin, Phone, Mail, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import GermanyMap from "@/components/GermanyMap"
+import { Tabs, TabsContent} from "@/components/ui/tabs"  // TabsList, TabsTrigger,
+import dynamic from "next/dynamic";
+
+const GermanyMap = dynamic(() => import("@/components/GermanyMap"), { ssr: false });
 
 const locations = [
   {
@@ -38,7 +40,7 @@ const locations = [
 ]
 
 export default function LocationsPage() {
-  const [activeLocation, setActiveLocation] = useState("munich")
+  // const [activeLocation, setActiveLocation] = useState("munich")
 
   return (
     <div className="container mx-auto px-4 py-24 sm:px-6 lg:px-8">
@@ -48,23 +50,22 @@ export default function LocationsPage() {
           <p className="text-lg text-muted-foreground">Visit us at one of our offices in Germany</p>
         </div>
 
-        <Tabs defaultValue="munich" onValueChange={setActiveLocation}>
-          <TabsList className="grid w-full grid-cols-2">
+        <Tabs defaultValue="munich">
+          {/* <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="munich">Munich</TabsTrigger>
             <TabsTrigger value="heilbronn">Heilbronn</TabsTrigger>
-          </TabsList>
+          </TabsList> */}
 
           {locations.map((location) => (
             <TabsContent key={location.id} value={location.id} className="mt-6">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <Card>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                <Card className="flex flex-col">
                   <CardHeader>
                     <CardTitle>{location.name}</CardTitle>
                     <CardDescription>{location.description}</CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-4">
+                  <CardContent className="space-y-4 flex-grow">
                     <p>{location.longDescription}</p>
-
                     <div className="space-y-2">
                       <div className="flex items-start gap-2">
                         <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
@@ -79,14 +80,8 @@ export default function LocationsPage() {
                         <span>{location.email}</span>
                       </div>
                     </div>
-
                     <div className="pt-4">
-                      <a
-                        href={location.mapsLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full"
-                      >
+                      <a href={location.mapsLink} target="_blank" rel="noopener noreferrer" className="w-full">
                         <Button className="w-full">
                           Get Directions
                           <ExternalLink className="ml-2 h-4 w-4" />
@@ -96,17 +91,18 @@ export default function LocationsPage() {
                   </CardContent>
                 </Card>
 
-                <div className="space-y-6">
-                  <div className="aspect-video relative rounded-xl overflow-hidden bg-muted">
-                    <Image
-                      src={location.image || "/placeholder.svg"}
-                      alt={`${location.name} office`}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
+                {/* Image container to match card height */}
+                <div className="relative rounded-xl overflow-hidden bg-muted h-full">
+                  <Image
+                    src={location.image || "/placeholder.svg"}
+                    alt={`${location.name} office`}
+                    fill
+                    className="object-cover"
+                  />
+                
 
-                  <Card>
+
+                  {/* <Card>
                     <CardHeader>
                       <CardTitle>Location Map</CardTitle>
                     </CardHeader>
@@ -115,7 +111,7 @@ export default function LocationsPage() {
                         
                       </div>
                     </CardContent>
-                  </Card>
+                  </Card> */}
                 </div>
               </div>
             </TabsContent>

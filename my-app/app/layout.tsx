@@ -14,6 +14,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Munich FinanceCircle",
+  icons: {
+    icon: "favicon.ico"
+  },
   description: "Munich's most dynamic finance society",
 }
 

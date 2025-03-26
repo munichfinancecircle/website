@@ -15,7 +15,7 @@ const navItems = [
   { name: "Team", href: "/team" },
   { name: "Partners", href: "/partners" },
   { name: "Calendar", href: "/calendar" },
-  { name: "Locations", href: "/locations" },
+  // { name: "Locations", href: "/locations" },
   { name: "Apply", href: "/apply" },
   { name: "Contact", href: "/contact" },
 ]
@@ -44,7 +44,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <Logo className="h-8 w-auto" />
+              <Logo className="h-8 w-auto overflow-hidden" />
             </Link>
           </div>
 
