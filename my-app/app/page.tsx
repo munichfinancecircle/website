@@ -9,32 +9,32 @@ import { Button } from "@/components/ui/button"
 const partners = [
   {
     name: "Jane Street",
-    logo: "/placeholder.svg?height=100&width=200",
+    logo: "/images/PartnerLogos/JaneStreetLogo.png",
     description: "Leading global trading firm and liquidity provider.",
   },
   {
     name: "TIBURON",
-    logo: "/placeholder.svg?height=100&width=200",
+    logo: "/images/PartnerLogos/JaneStreetLogo.png",
     description: "Investment and advisory firm focused on growth companies.",
   },
   {
     name: "Bloomberg",
-    logo: "/placeholder.svg?height=100&width=200",
+    logo: "/images/PartnerLogos/JaneStreetLogo.png",
     description: "Global financial data and media company.",
   },
   {
     name: "S&P Global",
-    logo: "/placeholder.svg?height=100&width=200",
+    logo: "/images/PartnerLogos/JaneStreetLogo.png",
     description: "World's leading provider of credit ratings and analytics.",
   },
   {
     name: "ValueTrust",
-    logo: "/placeholder.svg?height=100&width=200",
+    logo: "/images/PartnerLogos/JaneStreetLogo.png",
     description: "Financial advisory and valuation services.",
   },
   {
     name: "ALP.X GROUP",
-    logo: "/placeholder.svg?height=100&width=200",
+    logo: "/images/PartnerLogos/JaneStreetLogo.png",
     description: "Investment and consulting group.",
   },
 ]
