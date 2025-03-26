@@ -14,27 +14,27 @@ const partners = [
   },
   {
     name: "TIBURON",
-    logo: "/images/PartnerLogos/JaneStreetLogo.png",
+    logo: "/images/PartnerLogos/Tiburon.jpg",
     description: "Investment and advisory firm focused on growth companies.",
   },
   {
     name: "Bloomberg",
-    logo: "/images/PartnerLogos/JaneStreetLogo.png",
+    logo: "/images/PartnerLogos/bloombergLogo.png",
     description: "Global financial data and media company.",
   },
   {
     name: "S&P Global",
-    logo: "/images/PartnerLogos/JaneStreetLogo.png",
+    logo: "/images/PartnerLogos/SnPGlobal.jpg",
     description: "World's leading provider of credit ratings and analytics.",
   },
   {
     name: "ValueTrust",
-    logo: "/images/PartnerLogos/JaneStreetLogo.png",
+    logo: "/images/PartnerLogos/ValueTrust.jpg",
     description: "Financial advisory and valuation services.",
   },
   {
     name: "ALP.X GROUP",
-    logo: "/images/PartnerLogos/JaneStreetLogo.png",
+    logo: "/images/PartnerLogos/ALPX.jpg",
     description: "Investment and consulting group.",
   },
 ]
@@ -45,19 +45,19 @@ const team = [
     name: "Constantin Albrecht",
     role: "President & Founder",
     image: "/images/Team/TeamConstantinAlbrecht.jpg",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/constantin-albrecht/",
   },
   {
     name: "Antonia Zimmermann",
     role: "Advisory Vice President Education",
     image: "/images/Team/TeamAntoniaZimmermann.jpg",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/antonia-zimmermann-1863b2215/",
   },
   {
     name: "Maximilian Warthmann",
     role: "Advisory Vice President Infrastructure",
     image: "/images/Team/TeamMaximilianWarthmann.jpg",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/maximilianwarthmann/",
   },
   {
     name: "Louise Lorenz",
