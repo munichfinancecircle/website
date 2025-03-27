@@ -24,7 +24,7 @@ export function Logo({ className, ...props }: LogoProps) {
         alt="Munich FinanceCircle Logo"
         width={200}
         height={80}
-        className="h-32 w-auto"
+        className="h-40 w-auto"
         priority
       />
     </div>
