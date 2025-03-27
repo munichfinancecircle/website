@@ -41,7 +41,7 @@ const teamData = {
       name: "Louise Lorenz",
       role: "Head of Communications",
       image: "/images/Team/TeamLouiseLorenz.jpg",
-      bio: "Louise coordinates all events and networking opportunities. She has a background in event management and is dedicated to creating valuable connections for our members.",
+      bio: "Louise is responsible for the internal and external communication of our organization. Her role includes managing our social-media, coordinating marketing efforts and serving as a point of contact for prospective members.",
       linkedin: "https://www.linkedin.com/in/louise-lorenz-93ba452b1/",
       email: "louise.lorenz@munichfinancecircle.de",
     },
