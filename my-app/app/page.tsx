@@ -72,18 +72,31 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section - Banner image in a div */}
       <section className="pt-16 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto">
-          <div className="relative w-full overflow-hidden rounded-xl">
-            <Image
-              src="/images/HomeBanner.jpg"
-              alt="Munich FinanceCircle Banner"
-              width={1920}
-              height={1080}
-              className="w-full h-auto"
-              priority
-            />
-          </div>
+      <div className="container mx-auto">
+        <div className="relative w-full overflow-hidden rounded-xl">
+
+          {/* Image for larger screens */}
+          <Image
+            src="/images/HomeBanner.jpg"
+            alt="Munich FinanceCircle Banner"
+            width={1920}
+            height={1080}
+            className="hidden md:block w-full h-auto"
+            priority
+          />
+
+          {/* Image for mobile screens */}
+          <Image
+            src="/images/HomeBannerMobile.jpg"
+            alt="Munich FinanceCircle Mobile Banner"
+            width={720}
+            height={400}
+            className="block md:hidden w-full h-auto"
+            priority
+          />
+          
         </div>
+      </div>
       </section>
 
       {/* About Section */}
@@ -171,7 +184,7 @@ export default function Home() {
             {partners.slice(0, 6).map((partner) => (
               <div
                 key={partner.name}
-                className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow flex items-center justify-center"
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow flex items-center justify-center"
               >
                 <Image
                   src={partner.logo || "/placeholder.svg"}
