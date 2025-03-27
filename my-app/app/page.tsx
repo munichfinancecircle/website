@@ -62,7 +62,7 @@ const team = [
   {
     name: "Louise Lorenz",
     role: "Head of Communications",
-    image: "",
+    image: "/images/Team/TeamLouiseLorenz.jpg",
     linkedin: "https://www.linkedin.com/in/louise-lorenz-93ba452b1/",
   },
 ]
