@@ -15,7 +15,7 @@ const navItems = [
   { name: "Team", href: "/team" },
   { name: "Partners", href: "/partners" },
   { name: "Calendar", href: "/calendar" },
-  // { name: "Locations", href: "/locations" },
+  { name: "Locations", href: "/locations" },
   { name: "Apply", href: "/apply" },
   { name: "Contact", href: "/contact" },
 ]

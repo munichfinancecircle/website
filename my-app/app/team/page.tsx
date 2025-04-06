@@ -4,7 +4,7 @@
 import Image from "next/image"
 import { Linkedin, Mail } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent} from "@/components/ui/tabs" //, TabsList, TabsTrigger, Tabs
+import { Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs" //
 
 // Sample team data
 const teamData = {
@@ -89,10 +89,10 @@ export default function TeamPage() {
         </div>
 
         <Tabs defaultValue="munich"> 
-          {/* <TabsList className="grid w-full grid-cols-2 mb-8">
+          <TabsList className="grid w-full grid-cols-2 mb-8">
             <TabsTrigger value="munich">Munich Team</TabsTrigger>
             <TabsTrigger value="heilbronn">Heilbronn Team</TabsTrigger>
-          </TabsList> */}
+          </TabsList>
 
           <TabsContent value="munich" className="space-y-8">
             {teamData.munich.map((member) => (
@@ -127,7 +127,7 @@ export default function TeamPage() {
             ))}
           </TabsContent>
 
-          {/* <TabsContent value="heilbronn" className="space-y-8">
+          <TabsContent value="heilbronn" className="space-y-8">
             {teamData.heilbronn.map((member) => (
               <Card key={member.id} className="overflow-hidden">
                 <CardContent className="p-0">
@@ -158,7 +158,7 @@ export default function TeamPage() {
                 </CardContent>
               </Card>
             ))}
-          </TabsContent> */}
+          </TabsContent>
         </Tabs>
       </div>
     </div>

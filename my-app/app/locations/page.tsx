@@ -1,11 +1,11 @@
 "use client"
 
-// import { useState } from "react"
+import { useState } from "react"
 import Image from "next/image"
 import { MapPin, Phone, Mail, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent} from "@/components/ui/tabs"  // TabsList, TabsTrigger,
+import { TabsList, TabsTrigger, Tabs, TabsContent} from "@/components/ui/tabs"  // 
 import dynamic from "next/dynamic";
 
 const GermanyMap = dynamic(() => import("@/components/GermanyMap"), { ssr: false });
@@ -40,7 +40,7 @@ const locations = [
 ]
 
 export default function LocationsPage() {
-  // const [activeLocation, setActiveLocation] = useState("munich")
+  const [activeLocation, setActiveLocation] = useState("munich")
 
   return (
     <div className="container mx-auto px-4 py-24 sm:px-6 lg:px-8">
@@ -51,10 +51,10 @@ export default function LocationsPage() {
         </div>
 
         <Tabs defaultValue="munich">
-          {/* <TabsList className="grid w-full grid-cols-2">
+          <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="munich">Munich</TabsTrigger>
             <TabsTrigger value="heilbronn">Heilbronn</TabsTrigger>
-          </TabsList> */}
+          </TabsList>
 
           {locations.map((location) => (
             <TabsContent key={location.id} value={location.id} className="mt-6">
