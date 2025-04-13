@@ -11,9 +11,9 @@ import Link from "next/link"
 const applicationData = {
   isActive: true,
   googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSezN9pdN2yIvdKIiRFE9e5VHiXhOsrtoOY6GrvCUfwQDL9-7g/viewform?usp=header",
-  nextDeadline: new Date("2025-04-30T23:59:59"),
-  nextApplicationPhase: new Date("2025-04-09T00:00:00"),
-  applicationTime: 47
+  nextDeadline: new Date("2025-05-09T23:59:59"),
+  nextApplicationPhase: new Date("2025-04-18T00:00:00"),
+  applicationTime: 21
 }
 
 export default function ApplyPage() {

@@ -43,7 +43,7 @@ const partners = [
 const team = [
   {
     name: "Constantin Albrecht",
-    role: "President",
+    role: "President & Founder",
     image: "/images/Team/TeamConstantinAlbrecht.jpg",
     linkedin: "https://www.linkedin.com/in/constantin-albrecht/",
   },

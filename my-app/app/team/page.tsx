@@ -12,7 +12,7 @@ const teamData = {
     {
       id: 1,
       name: "Constantin Albrecht",
-      role: "President",
+      role: "President & Founder",
       image: "/images/Team/TeamConstantinAlbrecht.jpg",
       bio: "Constantin oversees the club which he founded in 2023 with the vision to connect ambitious students with industry professionals. He gained previous experience at Deutsche Bank, Citadel and in bond trading.",
       linkedin: "https://www.linkedin.com/in/constantin-albrecht/",
