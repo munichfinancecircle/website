@@ -40,7 +40,7 @@ const locations = [
 ]
 
 export default function LocationsPage() {
-  const [activeLocation, setActiveLocation] = useState("munich")
+  const [] = useState("munich")
 
   return (
     <div className="container mx-auto px-4 py-24 sm:px-6 lg:px-8">
