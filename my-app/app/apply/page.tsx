@@ -10,10 +10,10 @@ import Link from "next/link"
 // Sample application data
 const applicationData = {
   isActive: true,
-  googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSezN9pdN2yIvdKIiRFE9e5VHiXhOsrtoOY6GrvCUfwQDL9-7g/viewform?usp=header",
-  nextDeadline: new Date("2025-04-30T23:59:59"),
-  nextApplicationPhase: new Date("2025-04-09T00:00:00"),
-  applicationTime: 47
+  googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfpf4gUKL-qg22tTpWSP6nmbGgAK2PpOKHYzho6S9N8EQ7b4g/viewform?usp=dialog",
+  nextDeadline: new Date("2025-05-09T23:59:59"),
+  nextApplicationPhase: new Date("2025-04-18T00:00:00"),
+  applicationTime: 21
 }
 
 export default function ApplyPage() {
@@ -28,7 +28,7 @@ export default function ApplyPage() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      applicationData.isActive = applicationData.nextDeadline < applicationData.nextApplicationPhase
+      applicationData.isActive = applicationData.nextDeadline > applicationData.nextApplicationPhase
       const targetDate = applicationData.isActive ? applicationData.nextDeadline : applicationData.nextApplicationPhase
 
       const difference = targetDate.getTime() - new Date().getTime()
@@ -113,7 +113,7 @@ export default function ApplyPage() {
 
             <div className="flex items-center justify-center mt-8">
               {applicationData.isActive ? (
-                <Link href="https://forms.gle/RBF45qfdMjWAxGLa8">
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfpf4gUKL-qg22tTpWSP6nmbGgAK2PpOKHYzho6S9N8EQ7b4g/viewform?usp=dialog">
                   <Button size="lg" className="rounded-full">
                     Apply Now
                   </Button>
