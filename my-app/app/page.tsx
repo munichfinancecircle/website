@@ -13,9 +13,10 @@ const partners = [
     description: "Leading global trading firm and liquidity provider.",
   },
   {
-    name: "TIBURON",
-    logo: "/images/PartnerLogos/Tiburon.jpg",
-    description: "Investment and advisory firm focused on growth companies.",
+    name: "Rothschild & Co",
+    logo: "/images/PartnerLogos/Rothschild.jpg",
+    description:
+      "Rotschild is a prominent boutique investment bank specializing in advisory services for mergers, acquisitions, and strategic financial transactions. Our partnership allows members to engage directly with industry professionals and gain exposure to high-level financial advisory work.",
   },
   {
     name: "Bloomberg",
@@ -28,14 +29,15 @@ const partners = [
     description: "World's leading provider of credit ratings and analytics.",
   },
   {
-    name: "ValueTrust",
-    logo: "/images/PartnerLogos/ValueTrust.jpg",
-    description: "Financial advisory and valuation services.",
+    name: "TIBURON",
+    logo: "/images/PartnerLogos/Tiburon.jpg",
+    description: "Investment and advisory firm focused on growth companies.",
   },
   {
-    name: "ALP.X GROUP",
-    logo: "/images/PartnerLogos/ALPX.jpg",
-    description: "Investment and consulting group.",
+    name: "KPMG",
+    logo: "/images/PartnerLogos/KPMG.jpg",
+    description:
+      "KPMG is one of the Big Four accounting firms, offering audit, tax, and advisory services worldwide. We are partnering with their Deal Advisory. Thorugh the partnership our members can benefit from workshops and insights into M&A Advisory and Tech Due Diligence.",
   },
 ]
 

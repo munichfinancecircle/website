@@ -4,7 +4,7 @@
 import Image from "next/image"
 import { Linkedin, Mail } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent} from "@/components/ui/tabs" //, TabsList, TabsTrigger, Tabs
+import { Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs" //
 
 // Sample team data
 const teamData = {
@@ -50,29 +50,38 @@ const teamData = {
     {
       id: 5,
       name: "Steven Keogh",
-      role: "Heilbronn Branch Director",
-      image: "/images/Team/TeamConstantinAlbrecht.jpg",
-      bio: "Steven leads our Heilbronn branch, focusing on fintech innovations and emerging technologies in finance. He has experience in startup incubation and venture capital.",
-      linkedin: "#",
-      email: "thomas@munichfinancecircle.de",
+      role: "Head of Heilbronn Branch",
+      image: "/images/Team/TeamHeilbronn_StevenKeogh.jpg",
+      bio: "Steven is responsible for managing the organization’s external relations of the Heilbronn branch and maintaining partnerships with industry professionals. He gained practical experience during his internship at Baker Tilly, where he supported projects in Financial Services Audit.",
+      linkedin: "https://www.linkedin.com/in/steven-keogh/",
+      email: "steven.keogh@munichfinancecircle.de",
     },
     {
       id: 6,
-      name: "Laura Fischer",
-      role: "Vice President Partnerships",
-      image: "/images/Team/TeamMaximilianWarthmann.jpg",
-      bio: "Laura manages relationships with our corporate partners in the Heilbronn region. She has a background in business development and strategic partnerships.",
-      linkedin: "#",
-      email: "laura@munichfinancecircle.de",
+      name: "Daniel Simonides",
+      role: "Head of Member Development",
+      image: "/images/Team/TeamHeilbronn_DanielSimonides.jpg",
+      bio: "Daniel is responsible for all educational events and workshops in Heilbronn. His fields of expertise include quantitative analysis and market research. Formerly, he has gained experience by working with Porsche Digital as a part of an educational program by Campus Founders.",
+      linkedin: "https://www.linkedin.com/in/daniel-simonides-03b725289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      email: "daniel.simonides@munichfinancecircle.de",
     },
     {
       id: 7,
-      name: "Michael Weber",
-      role: "Technology Officer",
-      image: "/images/Team/TeamMaximilianWarthmann.jpg",
-      bio: "Michael oversees all technology initiatives at our Heilbronn hub. He has experience in software development and blockchain technology.",
-      linkedin: "#",
-      email: "michael@munichfinancecircle.de",
+      name: "David Gang",
+      role: "Head of Education",
+      image: "/images/Team/TeamHeilbronn_DavidGang.jpg",
+      bio: "David is responsible for education at the club, where he helps students to enhance their skills and know-how. He has gained experience with the Chair of Strategic Management in strategy and business development..",
+      linkedin: "https://www.linkedin.com/in/david-gang-6a3711308/",
+      email: "david.gang@munichfinancecircle.de",
+    },
+    {
+      id: 8,
+      name: "Lukas",
+      role: "Head of Marketing",
+      image: "/images/Team/TeamHeilbronn_LukasW.jpg",
+      bio: "Lukas is responsible for external affairs at the club, where he helps connect students with industry leaders. He has gained experience with RedBull in Marketing and Schoellerbank in Wealth Management.",
+      linkedin: "https://www.linkedin.com/in/lukas-weigl-998476297/",
+      email: "lukas.weigl@munichfinancecircle.de",
     },
   ],
 }
@@ -89,10 +98,10 @@ export default function TeamPage() {
         </div>
 
         <Tabs defaultValue="munich"> 
-          {/* <TabsList className="grid w-full grid-cols-2 mb-8">
+          <TabsList className="grid w-full grid-cols-2 mb-8">
             <TabsTrigger value="munich">Munich Team</TabsTrigger>
             <TabsTrigger value="heilbronn">Heilbronn Team</TabsTrigger>
-          </TabsList> */}
+          </TabsList>
 
           <TabsContent value="munich" className="space-y-8">
             {teamData.munich.map((member) => (
@@ -127,7 +136,7 @@ export default function TeamPage() {
             ))}
           </TabsContent>
 
-          {/* <TabsContent value="heilbronn" className="space-y-8">
+          <TabsContent value="heilbronn" className="space-y-8">
             {teamData.heilbronn.map((member) => (
               <Card key={member.id} className="overflow-hidden">
                 <CardContent className="p-0">
@@ -158,7 +167,7 @@ export default function TeamPage() {
                 </CardContent>
               </Card>
             ))}
-          </TabsContent> */}
+          </TabsContent>
         </Tabs>
       </div>
     </div>
