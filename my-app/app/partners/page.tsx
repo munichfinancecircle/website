@@ -78,7 +78,7 @@ export default function PartnersPage() {
             <Card key={partner.name} className="overflow-hidden">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row gap-8">
-                  <div className="w-full md:w-1/3 flex items-center justify-center bg-white dark:bg-gray-900 rounded-xl p-6">
+                  <div className="w-full md:w-1/3 flex items-center justify-center bg-white dark:bg-white rounded-xl p-6">
                     <Image
                       src={partner.logo || "/placeholder.svg"}
                       alt={partner.name}

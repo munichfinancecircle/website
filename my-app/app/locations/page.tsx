@@ -16,7 +16,7 @@ const locations = [
     name: "Munich",
     description: "Our founding location and the heart of our operations.",
     longDescription:
-      "Munich serves as our main hub where we host most of our events and workshops. The vibrant financial ecosystem of Munich provides the perfect backdrop for our activities. Located in the heart of Bavaria, our Munich office is easily accessible and offers state-of-the-art facilities for our members.",
+      "Munich serves as our main hub where we host most of our events and workshops. The vibrant financial ecosystem of Munich provides the perfect backdrop for our activities.",
     address: "Arcisstraße 21, 80333 Munich, Germany",
     phone: "+49 89 1234567",
     email: "munich@munichfinancecircle.de",
@@ -27,9 +27,9 @@ const locations = [
   {
     id: "heilbronn",
     name: "Heilbronn",
-    description: "Our new innovative hub that extends our network.",
+    description: "Our new innovative location that extends our network.",
     longDescription:
-      "The Heilbronn location focuses on fintech and emerging financial technologies, providing our members with insights into the future of finance. This innovative hub is designed to foster collaboration and creativity, with flexible workspaces and cutting-edge technology.",
+      "The Heilbronn location focuses on fintech and emerging financial technologies, providing our members with insights into the future of finance.",
     address: "Bildungscampus 9, 74076 Heilbronn, Germany",
     phone: "+49 7131 1234567",
     email: "heilbronn@munichfinancecircle.de",
@@ -47,7 +47,7 @@ export default function LocationsPage() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="section-title mb-4">Our Locations</h1>
-          <p className="text-lg text-muted-foreground">Visit us at one of our offices in Germany</p>
+          <p className="text-lg text-muted-foreground">Meet us at one of our locations in Germany</p>
         </div>
 
         <Tabs defaultValue="munich">
@@ -71,10 +71,10 @@ export default function LocationsPage() {
                         <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                         <span>{location.address}</span>
                       </div>
-                      <div className="flex items-center gap-2">
+                      {/* <div className="flex items-center gap-2">
                         <Phone className="h-5 w-5 text-primary" />
                         <span>{location.phone}</span>
-                      </div>
+                      </div> */}
                       <div className="flex items-center gap-2">
                         <Mail className="h-5 w-5 text-primary" />
                         <span>{location.email}</span>
