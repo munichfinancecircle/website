@@ -5,26 +5,17 @@ import { Calendar } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
-const applicationDataMunich = {
-    city: "Munich",
-    isActive: true,
-    googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfpf4gUKL-qg22tTpWSP6nmbGgAK2PpOKHYzho6S9N8EQ7b4g/viewform?usp=dialog",
-    nextDeadline: new Date("2025-05-09T23:59:59"),
-    nextApplicationPhase: new Date("2025-04-18T00:00:00"),
-    applicationTime: 21 // in days
-  }
-  
-  const applicationDataHeilbronn = {
-    city: "Heilbronn",
-    isActive: true,
-    googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdg5y5AIUKZRnciGY44bGeajOyLz7eh0fD9S67lRR6zsSkZjg/viewform?usp=dialog",
-    nextDeadline: new Date("2025-05-20T23:59:59"),
-    nextApplicationPhase: new Date("2025-05-01T00:00:00"),
-    applicationTime: 19 // in days
-  }
+type ApplicationData = {
+    city: string;
+    isActive: boolean;
+    googleFormUrl: string;
+    nextDeadline: Date;
+    nextApplicationPhase: Date;
+    applicationTime: number; // in days
+  };
   
 
-    export default function ApplicationCard({ data }: { data: typeof applicationDataMunich }) {
+    export default function ApplicationCard({ data }: { data: ApplicationData }) {
         const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
         const [progress, setProgress] = useState(0)
     

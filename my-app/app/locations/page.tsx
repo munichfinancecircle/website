@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { MapPin, Phone, Mail, ExternalLink } from "lucide-react"
+import { MapPin, Mail, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { TabsList, TabsTrigger, Tabs, TabsContent} from "@/components/ui/tabs"  // 

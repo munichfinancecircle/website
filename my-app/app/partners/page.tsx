@@ -12,16 +12,34 @@ export default function PartnersPage() {
         "Jane Street is a global trading firm and liquidity provider. We partner with them to provide our members with insights into quantitative trading and market making. Through this partnership, our members get exclusive access to workshops and potential internship opportunities.",
     },
     {
-      name: "TIBURON",
-      logo: "/images/PartnerLogos/Tiburon.jpg",
+      name: "Rothschild & Co",
+      logo: "/images/PartnerLogos/Rothschild.jpg",
       description:
-        "TIBURON is a venture capital and advisory firm focused on growth companies. Our partnership enables members to learn more about this exciting industry through practical case studies.",
+        "Rotschild is a prominent boutique investment bank specializing in advisory services for mergers, acquisitions, and strategic financial transactions. Our partnership allows members to engage directly with industry professionals and gain exposure to high-level financial advisory work.",
+    },
+    {
+      name: "KPMG",
+      logo: "/images/PartnerLogos/KPMG.jpg",
+      description:
+        "KPMG is one of the Big Four accounting firms, offering audit, tax, and advisory services worldwide. We are partnering with their Deal Advisory. Thorugh the partnership our members can benefit from workshops and insights into M&A Advisory and Tech Due Diligence.",
     },
     {
       name: "Bloomberg",
       logo: "/images/PartnerLogos/bloombergLogo.png",
       description:
         "Bloomberg is the leading global financial data provider. Through our collaboration, members receive training on the Bloomberg Terminal and gain valuable insights into financial markets and data analysis.",
+    },    
+    {
+      name: "TIBURON",
+      logo: "/images/PartnerLogos/Tiburon.jpg",
+      description:
+        "TIBURON is a venture capital and advisory firm focused on growth companies. Our partnership enables members to learn more about this exciting industry through practical case studies.",
+    },
+    {
+      name: "ALAIKA",
+      logo: "/images/PartnerLogos/ALAIKA.jpg",
+      description:
+        "ALAIKA is a dynamic consulting and private equity firm focused on digital transformation and growth strategies. By partnering with ALAIKA, our members gain practical exposure to strategy consulting and operational improvement projects.",
     },
     {
       name: "S&P Global",
@@ -54,6 +72,12 @@ export default function PartnersPage() {
       name: "Donner & Reuschel",
       logo: "/images/PartnerLogos/DonnerReuschel.jpg",
       description: "Donner & Reuschel is a prestigious private bank with a long-standing tradition in wealth management and investment advisory. This partnership offers members exclusive insights into private banking, financial planning, and corporate finance through expert-led sessions."
+    },
+    {
+      name: "OMMAX",
+      logo: "/images/PartnerLogos/OMMAX.jpg",
+      description:
+        "OMMAX is a digital strategy consulting firm specializing in transaction advisory and digital value creation. Our partnership offers members a unique look into the intersection of consulting, technology, and private equity through workshops and case study challenges.",
     },
     {
       name: "financial.com",
