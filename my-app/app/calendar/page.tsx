@@ -17,30 +17,30 @@ const events = [
     location: "Arcisstrasse 21, Munich",
     description: "Get to know Munich FinanceCircle and have an interesting chat with active members. ",
   },
-  // {
-  //   id: 2,
-  //   title: "Networking Event with Goldman Sachs",
-  //   date: new Date(2025, 2, 20),
-  //   time: "18:00 - 20:00",
-  //   location: "Virtual",
-  //   description: "Connect with professionals from Goldman Sachs and learn about career opportunities.",
-  // },
-  // {
-  //   id: 3,
-  //   title: "Company Visit: Deutsche Bank",
-  //   date: new Date(2025, 3, 5),
-  //   time: "10:00 - 12:00",
-  //   location: "Deutsche Bank HQ, Frankfurt",
-  //   description: "Exclusive behind-the-scenes tour of Deutsche Bank headquarters.",
-  // },
-  // {
-  //   id: 4,
-  //   title: "FinTech Innovation Workshop",
-  //   date: new Date(2025, 3, 12),
-  //   time: "15:00 - 17:00",
-  //   location: "Heilbronn Hub",
-  //   description: "Explore the latest innovations in financial technology.",
-  // },
+  {
+    id: 3,
+    title: "Company Event: Jane Street",
+    date: new Date(2025, 4, 15),
+    time: "tbd",
+    location: "Arcisstrasse 21, Munich",
+    description: "",
+  },
+  {
+    id: 4,
+    title: "Company Event: ALAIKA",
+    date: new Date(2025, 5, 11),
+    time: "tbd",
+    location: "Friedenstraße 22B, Munich",
+    description: "",
+  },
+  {
+    id: 5,
+    title: "Company Event: KPMG Deal Advisory",
+    date: new Date(2025, 5, 30),
+    time: "tbd",
+    location: "Friedenstraße 10, Munich",
+    description: "",
+  },
 ]
 
 export default function CalendarPage() {
@@ -115,7 +115,7 @@ export default function CalendarPage() {
                     the button below.
                   </p>
                   <a
-                    href="https://calendar.google.com/calendar/u/1?cid=ODk2MDkyMDAwYjNjZDVlODhhZWJmNTg5NDk5M2M5NjliNjBiYzlmNmEyMDIzMWNiOTE4MGQ0YjgwYmJjMGVlNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+                    href="https://calendar.google.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
