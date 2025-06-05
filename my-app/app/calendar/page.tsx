@@ -11,11 +11,27 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const events = [
   {
     id: 1,
-    title: "Get to know Munich FinanceCircle!",
-    date: new Date(2025,  4, 17),
-    time: "14:00 - 16:00",
+    title: "Membermeeting",
+    date: new Date(2025,  4, 29),
+    time: "tbd",
+    location: "Internal",
+    description: "Internal Meeting of active Members of the Munich FinanceCircle",
+  },
+  {
+    id: 2,
+    title: "Get-To-Know Munich FinanceCircle!",
+    date: new Date(2025, 4, 30),
+    time: "tbd",
     location: "Arcisstrasse 21, Munich",
-    description: "Get to know Munich FinanceCircle and have an interesting chat with active members. ",
+    description: "Get to know Munich FinanceCircle and have an interesting chat with active members.",
+  },
+  {
+    id: 3,
+    title: "Company Event: Jane Street",
+    date: new Date(2025, 5, 6),
+    time: "tbd",
+    location: "Arcisstrasse 21, Munich",
+    description: "",
   },
   {
     id: 3,

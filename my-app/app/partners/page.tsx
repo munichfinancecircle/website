@@ -12,16 +12,34 @@ export default function PartnersPage() {
         "Jane Street is a global trading firm and liquidity provider. We partner with them to provide our members with insights into quantitative trading and market making. Through this partnership, our members get exclusive access to workshops and potential internship opportunities.",
     },
     {
-      name: "TIBURON",
-      logo: "/images/PartnerLogos/Tiburon.jpg",
+      name: "Rothschild & Co",
+      logo: "/images/PartnerLogos/Rothschild.jpg",
       description:
-        "TIBURON is a venture capital and advisory firm focused on growth companies. Our partnership enables members to learn more about this exciting industry through practical case studies.",
+        "Rotschild is a prominent boutique investment bank specializing in advisory services for mergers, acquisitions, and strategic financial transactions. Our partnership allows members to engage directly with industry professionals and gain exposure to high-level financial advisory work.",
+    },
+    {
+      name: "KPMG",
+      logo: "/images/PartnerLogos/KPMG.jpg",
+      description:
+        "KPMG is one of the Big Four accounting firms, offering audit, tax, and advisory services worldwide. We are partnering with their Deal Advisory. Thorugh the partnership our members can benefit from workshops and insights into M&A Advisory and Tech Due Diligence.",
     },
     {
       name: "Bloomberg",
       logo: "/images/PartnerLogos/bloombergLogo.png",
       description:
         "Bloomberg is the leading global financial data provider. Through our collaboration, members receive training on the Bloomberg Terminal and gain valuable insights into financial markets and data analysis.",
+    },    
+    {
+      name: "TIBURON",
+      logo: "/images/PartnerLogos/Tiburon.jpg",
+      description:
+        "TIBURON is a venture capital and advisory firm focused on growth companies. Our partnership enables members to learn more about this exciting industry through practical case studies.",
+    },
+    {
+      name: "ALAIKA",
+      logo: "/images/PartnerLogos/ALAIKA.jpg",
+      description:
+        "ALAIKA is a dynamic consulting and private equity firm focused on digital transformation and growth strategies. By partnering with ALAIKA, our members gain practical exposure to strategy consulting and operational improvement projects.",
     },
     {
       name: "S&P Global",
@@ -56,6 +74,12 @@ export default function PartnersPage() {
       description: "Donner & Reuschel is a prestigious private bank with a long-standing tradition in wealth management and investment advisory. This partnership offers members exclusive insights into private banking, financial planning, and corporate finance through expert-led sessions."
     },
     {
+      name: "OMMAX",
+      logo: "/images/PartnerLogos/OMMAX.jpg",
+      description:
+        "OMMAX is a digital strategy consulting firm specializing in transaction advisory and digital value creation. Our partnership offers members a unique look into the intersection of consulting, technology, and private equity through workshops and case study challenges.",
+    },
+    {
       name: "financial.com",
       logo: "/images/PartnerLogos/financialcom.jpg",
       description: "financial.com is a leading provider of market data and trading solutions for banks and financial institutions. Through this collaboration, members gain hands-on experience with financial technology, data analytics, and real-time market insights."
@@ -78,7 +102,7 @@ export default function PartnersPage() {
             <Card key={partner.name} className="overflow-hidden">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row gap-8">
-                  <div className="w-full md:w-1/3 flex items-center justify-center bg-white dark:bg-gray-900 rounded-xl p-6">
+                  <div className="w-full md:w-1/3 flex items-center justify-center bg-white dark:bg-white rounded-xl p-6">
                     <Image
                       src={partner.logo || "/placeholder.svg"}
                       alt={partner.name}
