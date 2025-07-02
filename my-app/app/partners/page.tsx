@@ -18,6 +18,24 @@ export default function PartnersPage() {
         "Rotschild is a prominent boutique investment bank specializing in advisory services for mergers, acquisitions, and strategic financial transactions. Our partnership allows members to engage directly with industry professionals and gain exposure to high-level financial advisory work.",
     },
     {
+      name: "J.P. Morgan",
+      logo: "/images/PartnerLogos/JPMorganChase.jpg",
+      description:
+        "J.P. Morgan, a global leader in financial services, brings our members closer to the world of investment banking, asset management, and innovative financial solutions. Through tailored workshops and real-case simulations, students gain practical exposure to global markets and strategic finance.",
+    },
+    {
+      name: "Morgan Stanley",
+      logo: "/images/PartnerLogos/MorganStanley.jpg",
+      description:
+        "Morgan Stanley, renowned for its expertise in investment banking and wealth management, offers our members insight into high-impact deal-making and financial strategy. Engaging sessions and case challenges provide a unique view into capital markets, advisory services, and global finance leadership.",
+    },
+    {
+      name: "Armira",
+      logo: "/images/PartnerLogos/Armira.jpg",
+      description:
+        "Armira is a Munich-based private equity firm focused on long-term investments in high-quality companies. Our partnership provides members with insights into private equity investment strategies and operational excellence through workshops and case studies.",
+    },
+    {
       name: "KPMG",
       logo: "/images/PartnerLogos/KPMG.jpg",
       description:
@@ -72,12 +90,6 @@ export default function PartnersPage() {
       name: "Donner & Reuschel",
       logo: "/images/PartnerLogos/DonnerReuschel.jpg",
       description: "Donner & Reuschel is a prestigious private bank with a long-standing tradition in wealth management and investment advisory. This partnership offers members exclusive insights into private banking, financial planning, and corporate finance through expert-led sessions."
-    },
-    {
-      name: "OMMAX",
-      logo: "/images/PartnerLogos/OMMAX.jpg",
-      description:
-        "OMMAX is a digital strategy consulting firm specializing in transaction advisory and digital value creation. Our partnership offers members a unique look into the intersection of consulting, technology, and private equity through workshops and case study challenges.",
     },
     {
       name: "financial.com",
