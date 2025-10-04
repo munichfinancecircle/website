@@ -100,9 +100,11 @@ type ApplicationData = {
                 </Button>
               </Link>
             ) : (
+              <div className="flex justify-center">
               <div className="flex items-center gap-2 text-muted-foreground w-full sm:w-auto flex-1">
                 <Calendar className="h-5 w-5" />
                 <span>Applications open on {data.nextApplicationPhase.toLocaleDateString()}</span>
+              </div>
               </div>
             )}
           </div>

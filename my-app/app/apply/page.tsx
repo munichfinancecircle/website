@@ -15,19 +15,19 @@ import ApplicationCard from "@/components/ApplicationCard"
 const applicationDataMunich = {
   city: "Munich",
   isActive: true,
-  googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfpf4gUKL-qg22tTpWSP6nmbGgAK2PpOKHYzho6S9N8EQ7b4g/viewform?usp=dialog",
-  nextDeadline: new Date("2025-05-09T23:59:59"),
-  nextApplicationPhase: new Date("2025-04-18T00:00:00"),
-  applicationTime: 21 // in days
+  googleFormUrl: "https://forms.gle/gg5NheXTZgSqirok8",
+  nextDeadline: new Date("2025-10-30T23:59:59"),
+  nextApplicationPhase: new Date("2025-10-06T15:00:00"),
+  applicationTime: 24 // in days
 }
 
 const applicationDataHeilbronn = {
   city: "Heilbronn",
   isActive: true,
   googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdg5y5AIUKZRnciGY44bGeajOyLz7eh0fD9S67lRR6zsSkZjg/viewform?usp=dialog",
-  nextDeadline: new Date("2025-05-20T23:59:59"),
-  nextApplicationPhase: new Date("2025-05-01T00:00:00"),
-  applicationTime: 19 // in days
+  nextDeadline: new Date("2025-10-30T23:59:59"),
+  nextApplicationPhase: new Date("2025-10-06T15:00:00"),
+  applicationTime: 24 // in days
 }
 
 
