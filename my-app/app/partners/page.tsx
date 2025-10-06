@@ -30,6 +30,24 @@ export default function PartnersPage() {
         "Morgan Stanley, renowned for its expertise in investment banking and wealth management, offers our members insight into high-impact deal-making and financial strategy. Engaging sessions and case challenges provide a unique view into capital markets, advisory services, and global finance leadership.",
     },
     {
+      name: "KKR",
+      logo: "/images/PartnerLogos/KKRLogo.png",
+      description:
+        "KKR is a global investment firm that manages multiple alternative asset classes. Through our collaboration, members explore private equity, infrastructure, and credit investing, with direct exposure to KKR’s approach to value creation and networking opportunities across the industry.",
+    },
+    {
+      name: "Evercore",
+      logo: "/images/PartnerLogos/EvercoreLogo.jpg",
+      description:
+        "Evercore is a leading global independent investment banking advisory firm. Our partnership offers members deep insights into mergers and acquisitions, restructuring, and financial advisory. Students gain access to exclusive workshops and recruiting opportunities with Evercore professionals.",
+    },
+    {
+      name: "BNP Paribas",
+      logo: "/images/PartnerLogos/BNPParibasLogo.jpg",
+      description:
+        "BNP Paribas is an international banking group with a strong presence in global markets and corporate finance. Our partnership allows members to engage with professionals in investment banking, risk management, and sustainable finance, gaining insights and internship pathways within BNP Paribas.",
+    },
+    {
       name: "Armira",
       logo: "/images/PartnerLogos/Armira.jpg",
       description:

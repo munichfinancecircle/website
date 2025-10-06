@@ -24,7 +24,7 @@ const applicationDataMunich = {
 const applicationDataHeilbronn = {
   city: "Heilbronn",
   isActive: true,
-  googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdg5y5AIUKZRnciGY44bGeajOyLz7eh0fD9S67lRR6zsSkZjg/viewform?usp=dialog",
+  googleFormUrl: "https://forms.gle/hWNmiD8odmm5D8Td7",
   nextDeadline: new Date("2025-10-30T23:59:59"),
   nextApplicationPhase: new Date("2025-10-06T15:00:00"),
   applicationTime: 24 // in days

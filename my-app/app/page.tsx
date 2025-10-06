@@ -24,9 +24,10 @@ const partners = [
     description: "Global financial data and media company.",
   },
   {
-    name: "S&P Global",
-    logo: "/images/PartnerLogos/SnPGlobal.jpg",
-    description: "World's leading provider of credit ratings and analytics.",
+      name: "KKR",
+      logo: "/images/PartnerLogos/KKRLogo.png",
+      description:
+        "KKR is a global investment firm that manages multiple alternative asset classes. Through our collaboration, members explore private equity, infrastructure, and credit investing, with direct exposure to KKR’s approach to value creation and networking opportunities across the industry.",
   },
   {
     name: "TIBURON",
