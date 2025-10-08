@@ -17,8 +17,8 @@ const applicationDataMunich = {
   isActive: true,
   googleFormUrl: "https://forms.gle/gg5NheXTZgSqirok8",
   nextDeadline: new Date("2025-10-30T23:59:59"),
-  nextApplicationPhase: new Date("2025-10-06T15:00:00"),
-  applicationTime: 24 // in days
+  nextApplicationPhase: new Date("2025-10-10T15:00:00"),
+  applicationTime: 20 // in days
 }
 
 const applicationDataHeilbronn = {
@@ -26,8 +26,8 @@ const applicationDataHeilbronn = {
   isActive: true,
   googleFormUrl: "https://forms.gle/hWNmiD8odmm5D8Td7",
   nextDeadline: new Date("2025-10-30T23:59:59"),
-  nextApplicationPhase: new Date("2025-10-06T15:00:00"),
-  applicationTime: 24 // in days
+  nextApplicationPhase: new Date("2025-10-10T15:00:00"),
+  applicationTime: 20 // in days
 }
 
 
