@@ -21,7 +21,7 @@ const teamData = {
     {
       id: 2,
       name: "Antonia Zimmermann",
-      role: "Head of Education",
+      role: "Advisory Vice President of Education",
       image: "/images/Team/TeamAntoniaZimmermann.jpg",
       bio: "Antonia oversees all educational initiatives and workshops. Leveraging her background in accounting and audit, she is deeply committed to ensuring that financial knowledge is accessible and understandable for students.",
       linkedin: "https://www.linkedin.com/in/antonia-zimmermann-1863b2215/",
@@ -30,7 +30,7 @@ const teamData = {
     {
       id: 3,
       name: "Maximilian Warthmann",
-      role: "Head of Infrastructure",
+      role: "Advisory Vice President of Infrastructure",
       image: "/images/Team/TeamMaximilianWarthmann.jpg",
       bio: "Maximilian is responsible for the operational infrastructure of the organization. He has experience in project management and business development and has previously been working for BMW in Software Development.",
       linkedin: "https://www.linkedin.com/in/maximilianwarthmann/",
@@ -39,7 +39,7 @@ const teamData = {
     {
       id: 4,
       name: "Louise Lorenz",
-      role: "Head of Communications",
+      role: "Advisory Vice President of Communications",
       image: "/images/Team/TeamLouiseLorenz.jpg",
       bio: "Louise is responsible for the internal and external communication of our organization. Her role includes managing our social-media, coordinating marketing efforts and serving as a point of contact for prospective members.",
       linkedin: "https://www.linkedin.com/in/louise-lorenz-93ba452b1/",

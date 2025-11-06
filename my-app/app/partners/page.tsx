@@ -48,6 +48,12 @@ export default function PartnersPage() {
         "BNP Paribas is an international banking group with a strong presence in global markets and corporate finance. Our partnership allows members to engage with professionals in investment banking, risk management, and sustainable finance, gaining insights and internship pathways within BNP Paribas.",
     },
     {
+      name: "Barclays",
+      logo: "/images/PartnerLogos/BarclaysLogo.jpg",
+      description:
+        "Barclays is a leading global bank offering services across investment banking, wealth management, and corporate finance. Through this partnership, members can connect with professionals in finance, technology, and innovation, exploring opportunities for mentorship, internships, and career growth within Barclays.",
+    },
+    {
       name: "Armira",
       logo: "/images/PartnerLogos/Armira.jpg",
       description:
