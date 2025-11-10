@@ -62,12 +62,12 @@ const team = [
     image: "/images/Team/TeamMaximilianWarthmann.jpg",
     linkedin: "https://www.linkedin.com/in/maximilianwarthmann/",
   },
-  {
-    name: "Louise Lorenz",
-    role: "Head of Communications",
-    image: "/images/Team/TeamLouiseLorenz.jpg",
-    linkedin: "https://www.linkedin.com/in/louise-lorenz-93ba452b1/",
-  },
+  // {
+  //   name: "Louise Lorenz",
+  //   role: "Head of Communications",
+  //   image: "/images/Team/TeamLouiseLorenz.jpg",
+  //   linkedin: "https://www.linkedin.com/in/louise-lorenz-93ba452b1/",
+  // },
 ]
 
 export default function Home() {

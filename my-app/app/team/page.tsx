@@ -36,15 +36,15 @@ const teamData = {
       linkedin: "https://www.linkedin.com/in/maximilianwarthmann/",
       email: "maximilian.warthmann@munichfinancecircle.de",
     },
-    {
-      id: 4,
-      name: "Louise Lorenz",
-      role: "Advisory Vice President of Communications",
-      image: "/images/Team/TeamLouiseLorenz.jpg",
-      bio: "Louise is responsible for the internal and external communication of our organization. Her role includes managing our social-media, coordinating marketing efforts and serving as a point of contact for prospective members.",
-      linkedin: "https://www.linkedin.com/in/louise-lorenz-93ba452b1/",
-      email: "louise.lorenz@munichfinancecircle.de",
-    },
+    // {
+    //   id: 4,
+    //   name: "Louise Lorenz",
+    //   role: "Advisory Vice President of Communications",
+    //   image: "/images/Team/TeamLouiseLorenz.jpg",
+    //   bio: "Louise is responsible for the internal and external communication of our organization. Her role includes managing our social-media, coordinating marketing efforts and serving as a point of contact for prospective members.",
+    //   linkedin: "https://www.linkedin.com/in/louise-lorenz-93ba452b1/",
+    //   email: "louise.lorenz@munichfinancecircle.de",
+    // },
   ],
   heilbronn: [
     {
