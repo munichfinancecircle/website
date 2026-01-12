@@ -42,6 +42,12 @@ export default function PartnersPage() {
         "Evercore is a leading global independent investment banking advisory firm. Our partnership offers members deep insights into mergers and acquisitions, restructuring, and financial advisory. Students gain access to exclusive workshops and recruiting opportunities with Evercore professionals.",
     },
     {
+      name: "Lazard",
+      logo: "/images/PartnerLogos/LazardLogo.png",
+      description:
+        "Lazard is a leading global financial advisory firm specializing in mergers and acquisitions, restructuring, and strategic advisory. Through our partnership, members gain deep insights into Lazard’s advisory work, as well as access to exclusive workshops and recruiting opportunities with Lazard professionals.",
+    },
+    {
       name: "BNP Paribas",
       logo: "/images/PartnerLogos/BNPParibasLogo.jpg",
       description:
