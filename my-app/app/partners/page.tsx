@@ -76,7 +76,25 @@ export default function PartnersPage() {
       logo: "/images/PartnerLogos/bloombergLogo.png",
       description:
         "Bloomberg is the leading global financial data provider. Through our collaboration, members receive training on the Bloomberg Terminal and gain valuable insights into financial markets and data analysis.",
-    },    
+    },
+    {
+      name: "Citi",
+      logo: "/images/PartnerLogos/CitiLogo.png",
+      description:
+        "Citigroup is one of the world’s leading global banks, providing services across investment banking, capital markets, and corporate banking. Through our collaboration, members gain exposure to global financial markets, participate in workshops with industry professionals, and learn about career paths in investment banking and financial services.",
+    },
+    {
+      name: "Houlihan Lokey",
+      logo: "/images/PartnerLogos/HoulihanLokeyLogo.jpg",
+      description:
+        "Houlihan Lokey is one of the world’s leading global investment banks, specializing in mergers and acquisitions advisory, capital markets, and financial restructuring. Through our collaboration, members gain insights into the advisory side of investment banking, participate in workshops with experienced professionals, and learn about career opportunities in M&A and corporate finance.",
+    },
+    {
+      name: "Ardian",
+      logo: "/images/PartnerLogos/ArdianLogo.png",
+      description:
+        "Ardian is a leading global private investment firm specializing in private equity, infrastructure, and private credit. Through our collaboration, members gain insights into alternative investments, portfolio management, and institutional investing, while connecting with professionals and learning about career opportunities in private markets",
+    },
     {
       name: "TIBURON",
       logo: "/images/PartnerLogos/Tiburon.jpg",
@@ -135,7 +153,7 @@ export default function PartnersPage() {
   return (
     <div className="container mx-auto px-4 py-24 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
-      <div className="text-center mb-12">
+        <div className="text-center mb-12">
           <h1 className="section-title mb-4">Our Partners</h1>
           <p className="text-lg text-muted-foreground">Get to know the partners of the Munich FinanceCircle</p>
         </div>

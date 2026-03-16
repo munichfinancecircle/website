@@ -4,7 +4,7 @@
 import Image from "next/image"
 import { Linkedin, Mail } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs" //
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs" //
 
 // Sample team data
 const teamData = {
@@ -23,7 +23,7 @@ const teamData = {
       name: "Antonia Zimmermann",
       role: "Advisory Vice President of Education",
       image: "/images/Team/TeamAntoniaZimmermann.jpg",
-      bio: "Antonia oversees all educational initiatives and workshops. Leveraging her background in accounting and audit, she is deeply committed to ensuring that financial knowledge is accessible and understandable for students.",
+      bio: "Antonia oversees all educational initiatives and workshops. Leveraging her background in M&A and audit, she is deeply committed to ensuring that financial knowledge is accessible and understandable for students.",
       linkedin: "https://www.linkedin.com/in/antonia-zimmermann-1863b2215/",
       email: "antonia.zimmermann@munichfinancecircle.de",
     },
@@ -32,7 +32,7 @@ const teamData = {
       name: "Maximilian Warthmann",
       role: "Advisory Vice President of Infrastructure",
       image: "/images/Team/TeamMaximilianWarthmann.jpg",
-      bio: "Maximilian is responsible for the operational infrastructure of the organization. He has experience in project management and business development and has previously been working for BMW in Software Development.",
+      bio: "Maximilian is responsible for the operational infrastructure of the organization. He has experience in private investments and business development and has previously been working for BMW in Autonomous Driving.",
       linkedin: "https://www.linkedin.com/in/maximilianwarthmann/",
       email: "maximilian.warthmann@munichfinancecircle.de",
     },
@@ -97,7 +97,7 @@ export default function TeamPage() {
           <p className="text-lg text-muted-foreground">Meet the dedicated individuals behind Munich FinanceCircle</p>
         </div>
 
-        <Tabs defaultValue="munich"> 
+        <Tabs defaultValue="munich">
           <TabsList className="grid w-full grid-cols-2 mb-8">
             <TabsTrigger value="munich">Munich Team</TabsTrigger>
             <TabsTrigger value="heilbronn">Heilbronn Team</TabsTrigger>
@@ -108,8 +108,8 @@ export default function TeamPage() {
               <Card key={member.id} className="overflow-hidden">
                 <CardContent className="p-0">
                   <div className="flex flex-col md:flex-row">
-                    <div className="w-full md:w-1/3 h-64 md:h-auto relative"> 
-                      <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover object-[center_30%]" priority/>
+                    <div className="w-full md:w-1/3 h-64 md:h-auto relative">
+                      <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover object-[center_30%]" priority />
                     </div>
                     <div className="w-full md:w-2/3 p-6">
                       <h2 className="text-2xl font-bold mb-1">{member.name}</h2>
@@ -142,7 +142,7 @@ export default function TeamPage() {
                 <CardContent className="p-0">
                   <div className="flex flex-col md:flex-row">
                     <div className="w-full md:w-1/3 h-64 md:h-auto relative">
-                      <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover object-[center_30%]" priority/>
+                      <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover object-[center_30%]" priority />
                     </div>
                     <div className="w-full md:w-2/3 p-6">
                       <h2 className="text-2xl font-bold mb-1">{member.name}</h2>
