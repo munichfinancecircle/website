@@ -30,10 +30,22 @@ export default function PartnersPage() {
         "Morgan Stanley, renowned for its expertise in investment banking and wealth management, offers our members insight into high-impact deal-making and financial strategy. Engaging sessions and case challenges provide a unique view into capital markets, advisory services, and global finance leadership.",
     },
     {
+      name: "Blackstone",
+      logo: "/images/PartnerLogos/BlackstoneLogo.png",
+      description:
+        "Blackstone is a global investment firm specializing in alternative asset classes. Through our collaboration, members explore private equity, real estate, credit, and hedge fund solutions, with insights into Blackstone’s investment strategies and value creation approach, as well as access to networking opportunities across the industry.",
+    },
+    {
       name: "KKR",
       logo: "/images/PartnerLogos/KKRLogo.png",
       description:
         "KKR is a global investment firm that manages multiple alternative asset classes. Through our collaboration, members explore private equity, infrastructure, and credit investing, with direct exposure to KKR’s approach to value creation and networking opportunities across the industry.",
+    },
+    {
+      name: "BlackRock",
+      logo: "/images/PartnerLogos/BlackRockLogo.png",
+      description:
+        "BlackRock is the world’s largest asset manager, with expertise across public and private markets. Through our collaboration, members gain exposure to portfolio management, ETFs, and risk analytics, with insights into BlackRock’s data-driven investment approach and opportunities to connect with professionals across global financial markets.",
     },
     {
       name: "Evercore",

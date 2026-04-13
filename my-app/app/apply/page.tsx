@@ -15,18 +15,18 @@ import ApplicationCard from "@/components/ApplicationCard"
 const applicationDataMunich = {
   city: "Munich",
   isActive: true,
-  googleFormUrl: "https://forms.gle/gg5NheXTZgSqirok8",
-  nextDeadline: new Date("2025-10-30T23:59:59"),
-  nextApplicationPhase: new Date("2025-10-10T15:00:00"),
+  googleFormUrl: "https://forms.gle/uXKESLU6zfQ5sFN79",
+  nextDeadline: new Date("2026-05-10T23:59:59"),
+  nextApplicationPhase: new Date("2026-04-20T15:00:00"),
   applicationTime: 20 // in days
 }
 
 const applicationDataHeilbronn = {
   city: "Heilbronn",
   isActive: true,
-  googleFormUrl: "https://forms.gle/hWNmiD8odmm5D8Td7",
-  nextDeadline: new Date("2025-10-30T23:59:59"),
-  nextApplicationPhase: new Date("2025-10-10T15:00:00"),
+  googleFormUrl: "https://forms.gle/WSubEgsvzm4gvm6c6",
+  nextDeadline: new Date("2026-05-10T23:59:59"),
+  nextApplicationPhase: new Date("2026-04-20T15:00:00"),
   applicationTime: 20 // in days
 }
 
@@ -38,16 +38,16 @@ export default function ApplyPage() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="section-title mb-4">Apply to Join</h1>
-            <p className="text-lg text-muted-foreground">
-              {"Applications are currently open! Join Munich's most dynamic finance society."}
-            </p>
-          </div>
-          {/* Application cards for each city */}
-          <ApplicationCard data={applicationDataMunich} />
-          <ApplicationCard data={applicationDataHeilbronn} />
-    
-          {/* ... the rest like Application Process etc. */}
-          {(applicationDataMunich.isActive || applicationDataHeilbronn.isActive) && (
+          <p className="text-lg text-muted-foreground">
+            {"Applications are currently open! Join Munich's most dynamic finance society."}
+          </p>
+        </div>
+        {/* Application cards for each city */}
+        <ApplicationCard data={applicationDataMunich} />
+        <ApplicationCard data={applicationDataHeilbronn} />
+
+        {/* ... the rest like Application Process etc. */}
+        {(applicationDataMunich.isActive || applicationDataHeilbronn.isActive) && (
           <div className="space-y-8">
             {/* <Card>
               <CardHeader>
@@ -107,7 +107,7 @@ export default function ApplyPage() {
             </Card>
           </div>
         )}
-        </div>
       </div>
-      )
-    }
+    </div>
+  )
+}
