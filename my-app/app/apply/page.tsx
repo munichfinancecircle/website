@@ -16,18 +16,18 @@ const applicationDataMunich = {
   city: "Munich",
   isActive: true,
   googleFormUrl: "https://forms.gle/uXKESLU6zfQ5sFN79",
-  nextDeadline: new Date("2026-05-10T23:59:59"),
+  nextDeadline: new Date("2026-05-01T23:59:59"),
   nextApplicationPhase: new Date("2026-04-20T15:00:00"),
-  applicationTime: 20 // in days
+  applicationTime: 11 // in days
 }
 
 const applicationDataHeilbronn = {
   city: "Heilbronn",
   isActive: true,
   googleFormUrl: "https://forms.gle/WSubEgsvzm4gvm6c6",
-  nextDeadline: new Date("2026-05-10T23:59:59"),
+  nextDeadline: new Date("2026-05-01T23:59:59"),
   nextApplicationPhase: new Date("2026-04-20T15:00:00"),
-  applicationTime: 20 // in days
+  applicationTime: 11 // in days
 }
 
 
