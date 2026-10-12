@@ -15,10 +15,10 @@ import ApplicationCard from "@/components/ApplicationCard"
 const applicationDataMunich = {
   city: "Munich",
   isActive: true,
-  googleFormUrl: "https://forms.gle/uXKESLU6zfQ5sFN79",
-  nextDeadline: new Date("2026-05-01T23:59:59"),
-  nextApplicationPhase: new Date("2026-04-20T15:00:00"),
-  applicationTime: 11 // in days
+  googleFormUrl: "https://forms.gle/N4DW99n3dcnKisEC7",
+  nextDeadline: new Date("2026-11-01T23:59:59"),
+  nextApplicationPhase: new Date("2026-10-14T08:00:00"),
+  applicationTime: 18 // in days
 }
 
 const applicationDataHeilbronn = {
